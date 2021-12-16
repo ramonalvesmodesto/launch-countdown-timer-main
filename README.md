@@ -1,5 +1,5 @@
 # Crônometro de contagem regressiva
-Projeto rastreamento de ip e domínios, onde a aplicação começa informando o endereço contido no ip fornecido pelo seu provedor em um mapa, nessa aplicação é possível ver o endereço de um domínio ou de um ip.
+Projeto de contagem regressiva
 
 ## Visão Geral :notebook:
 
