@@ -49,12 +49,15 @@ function updateTimerSecond() {
 
     setInterval(function () {
         document.querySelector("#timer #seconds .front .numberClock").innerHTML = String(count).padStart(2, '0');
+        document.querySelector("#timer #seconds .front .numberClock").style.zIndex = "9";
         
         --count;
 
+        animation("seconds");
+
         setTimeout(function () {
             document.querySelector("#timer #seconds .back .numberClock").innerHTML = String(count).padStart(2, '0');
-        }, 400);
+        }, 500);
 
         if (count == -1) {
             document.querySelector("#timer #seconds .front .numberClock").innerHTML = "59";
@@ -64,9 +67,9 @@ function updateTimerSecond() {
 
             setTimeout(function () {
                 updateTimer("back");
-            }, 400);
+            }, 500);
         }
-        animation("seconds");
+        
     }, 1000);
 }
 
