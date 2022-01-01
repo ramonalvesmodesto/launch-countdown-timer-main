@@ -6,9 +6,9 @@ var minutes = String(date.getMinutes()).padStart(2, '0');
 var seconds = String(date.getSeconds()).padStart(2, '0');
 var endYear = new Date(date.getFullYear(), 11, 31);
 var daysToEndYear = String(Math.ceil((endYear.getTime() - date.getTime()) / (1000 * 60 * 60 * 24))).padStart(2, '0').padStart(3, '00');
-var hoursToEndDay = String(24 - hour).padStart(2, '0');
-var minusteToEndDay = String(60 - minutes).padStart(2, '0');
-var secondsToEndDay = String(60 - seconds).padStart(2, '0');
+var hoursToEndDay = String(23 - hour).padStart(2, '0');
+var minusteToEndDay = String(59 - minutes).padStart(2, '0');
+var secondsToEndDay = String(59 - seconds).padStart(2, '0');
 
 if (hoursToEndDay == 24) {
     hoursToEndDay = 23;
