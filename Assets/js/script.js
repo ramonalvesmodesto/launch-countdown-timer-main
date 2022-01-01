@@ -10,15 +10,6 @@ var hoursToEndDay = String(23 - hour).padStart(2, '0');
 var minusteToEndDay = String(59 - minutes).padStart(2, '0');
 var secondsToEndDay = String(59 - seconds).padStart(2, '0');
 
-if (hoursToEndDay == 24) {
-    hoursToEndDay = 23;
-    minusteToEndDay = 59;
-} else if (minusteToEndDay == 60) {
-    minusteToEndDay = 59;
-} else if (secondsToEndDay == 60) {
-    secondsToEndDay = 59;
-}
-
 
 const TIMER = `${daysToEndYear}:${hoursToEndDay}:${minusteToEndDay}:${secondsToEndDay}:${daysToEndYear}:${hoursToEndDay}:${minusteToEndDay}:${secondsToEndDay}`;
 let arrTimer = TIMER.split(":");
